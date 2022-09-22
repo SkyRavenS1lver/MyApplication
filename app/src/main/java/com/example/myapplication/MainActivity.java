@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         // membuat pindah-pindah, untuk pindah kemana kita menggunakan tablayout mediator
         viewPager.setAdapter(adapter);
         mediator = new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> {
-            tab.setText("Tab"+ position);
+            tab.setText("Tab"+ (position+1));
         });
 //        mediator = new TabLayoutMediator(tabLayout, viewPager, new TabLayoutMediator.TabConfigurationStrategy() {
 //            @Override
